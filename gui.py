@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import messagebox
 from fetch_sequence import fetch_dna_sequence  # Import function to fetch DNA sequence
-from Bio.SeqUtils import GC  # Import GC content calculation from Biopython
+from Bio.SeqUtils import from Bio.SeqUtils import gc_fraction  # Import GC content calculation from Biopython
 
 class DNASequenceViewerApp:
     def __init__(self, root):
