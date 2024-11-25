@@ -36,7 +36,7 @@ class DNASequenceViewerApp:
             try:
                 sequence = fetch_dna_sequence(accession_number)  # Fetch DNA sequence
                 length = len(sequence)
-                gc_content = GC(sequence)  # Calculate GC content
+                gc_content = gc-fraction(sequence)  # Calculate GC content
                 message = f"Accession Number: {accession_number}\nLength: {length} bp\nGC Content: {gc_content:.2f}%"
                 self.info_label.config(text=message)  # Display sequence information
             except Exception as e:
